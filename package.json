@@ -1,0 +1,23 @@
+{
+  "name": "typescript-aws-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimal TypeScript API using AWS Lambda, API Gateway, and SAM.",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "build": "sam build",
+    "local": "sam local start-api",
+    "deploy": "sam deploy --guided"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.152",
+    "@types/node": "^22.15.3",
+    "esbuild": "^0.25.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
